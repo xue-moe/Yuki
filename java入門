@@ -1,0 +1,22 @@
+//求和
+//一（迭代
+public int sum(int[]array) {
+			int sum=0；
+			for（int value:array){
+			sum +=value;}
+			return sum;
+	}
+  
+  
+//二（流方法
+public static int qiuhe(int[] array) {
+    return Arrays.stream(array).sum();
+}
+
+
+
+//随机输出名字
+public static void main(String[]args){
+String[] name={"张三","赵四","王五"};
+int num=(int)(Math.random()*name.length);
+system.out.println(name[num]);
